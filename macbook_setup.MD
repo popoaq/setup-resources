@@ -1,12 +1,10 @@
 ## Set up your macbook from scratch
-fresh as of 2019
+fresh as of july 2022
 
 ### Sublime
 download from online, then
 ```
-
-
-ln -sfv /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+echo 'export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"' >> ~/.zprofile
 ```
 ### Shell
 - download iterm2 & install zsh, oh-my-zsh
