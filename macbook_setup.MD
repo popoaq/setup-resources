@@ -7,7 +7,7 @@ download from online, then
 echo 'export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"' >> ~/.zprofile
 ```
 ### Shell
-- download iterm2 & install zsh, oh-my-zsh
+- download iterm2 & install oh-my-zsh
 [https://medium.com/ayuth/iterm2-zsh-oh-my-zsh-the-most-power-full-of-terminal-on-macos-bdb2823fb04c]
 
 #### z jump around
