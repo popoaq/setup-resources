@@ -1,0 +1,42 @@
+# Please indent options with one tab when editing defaults in
+# https://github.com/stripe-internal/marionette-puppet-config/blob/master/modules/git/templates/gitconfig.erb
+# That matches how "git config --global" edits the file.
+
+[user]
+        name = Emma Tang
+        # email = emma
+        email = tang1jo@gmail.com
+
+[push]
+        default = simple
+
+#[url "git@github.com:"]
+        #insteadOf = https://github.com/
+
+# http://stackoverflow.com/questions/18257622/why-is-git-core-preloadindex-default-value-false
+[core]
+        preloadindex = true
+
+[alias]
+  co = checkout
+  com = commit
+  coma = commit -a --amend
+  br = branch
+  ph = push origin head
+  rebasediff = diff --name-only --diff-filter=U
+  plog = log --pretty=format:'%Cred%h - %<(10)%Cblue%ad, %<(25)%C(yellow)%an : %C(green)%s' --date=short
+  st = status
+  showfiles = show --pretty="" --name-only HEAD    
+  mergemaster =  "!f() { git merge -S --no-ff $1; }; f"
+[core]
+  excludesfile = /Users/emma/.gitignore_global
+  attributesfile = ~/.gitattributes
+[color "branch"]
+  local = yellow
+  remote = green
+[color "status"]
+  added = green
+  changed = yellow
+  untracked = cyan
+[init]
+	defaultBranch = main
